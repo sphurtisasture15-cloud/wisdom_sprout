@@ -211,8 +211,8 @@ elif income <= 30000:
 else:
     tax = (10000 * 0.05) + (10000 * 0.10) + (income - 30000) * 0.15
 
-
-
+if income >= 0:
+    print("Income tax:", tax)
 
 # Q19) Check if a student passes (minimum 35 marks in each subject).
 
@@ -285,16 +285,18 @@ year = int(input("Enter year: "))
 match month:
     case "january" | "march" | "may" | "july" | "august" | "october" | "december":
         print("31 days")
+
     case "april" | "june" | "september" | "november":
         print("30 days")
+
     case "february":
         if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
             print("29 days")
         else:
             print("28 days")
-    case _:
-#         print("Invalid month name.")
 
+    case _:
+        print("Invalid month name.")
 # Q25) Check whether a password meets minimum conditions (length, digits, etc.).
 
 password = input("Enter password: ")
