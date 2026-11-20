@@ -297,7 +297,6 @@ match month:
 
 # Q25) Check whether a password meets minimum conditions (length, digits, etc.).
 
-# Q25) Check whether a password is valid.
 password = input("Enter password: ")
 
 if len(password) >= 8 and any(char.isdigit() for char in password):
