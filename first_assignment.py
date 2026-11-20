@@ -265,16 +265,18 @@ else:
     print("Not a century year.")
 
 # Q23)Determine the season based on the month number.
-
 month = int(input("Enter month number (1-12): "))
 
 match month:
-    case  3 | 4 | 5:
-        print("Summer Season")
+    case 3 | 4 | 5:
+        print("Summer")
+
     case 6 | 7 | 8 | 9:
-        print("Monsoon Season")
-    case 10 | 11 | 12 | 1 |2:
-        print("Winter Season")
+        print("Monsoon")
+
+    case 10 | 11 | 12 | 1 | 2:
+        print("Winter")
+
     case _:
         print("Invalid month number.")
 
